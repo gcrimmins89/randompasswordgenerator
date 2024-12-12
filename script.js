@@ -1,26 +1,14 @@
-// click generate password button
-// two random passwords are displayed in the two buttons below
-// create an array with all the keys on the keyboard
-// create a function that picks 12 random characters from the array
-// have the function pass the text.content into the buttons
-
-// to go through the character set and pick out a random character
-// loop this behaviour until a new character has been chosen for each
-
 let create = document.querySelector('#create-El')
 let generated1 = document.querySelector("#generated1")
 let generated2 = document.querySelector('#generated2')
 
-// create a function that takes 3 random symbols 3 random letters and 3 random numbers
-
-
 const characterSets = {
-    letters:    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", // Lowercase letters
+    letters:    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", // Lowercase & Uppercase letters
     numbers:    "0123456789",                 // Numbers
     symbols:    "!@#$%^&*()_+[]{}|;:',.<>?/`~" // Symbols
 };
 
-// for loop
+
 function getRandomCharacter(source) {
     const randomIndex = Math.floor(Math.random() * source.length);
     return source[randomIndex];
